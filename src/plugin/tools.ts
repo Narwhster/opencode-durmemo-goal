@@ -1,6 +1,7 @@
 import type { Plugin } from "@opencode-ai/plugin/effect";
 import { Error as ToolError } from "@opencode-ai/plugin/promise/tool";
 import { Effect, Schema } from "effect";
+import { type DurmemoClient } from "opencode-durmemo/rpc";
 import {
   GOAL_APPLIED_KEY,
   GOAL_DESCRIPTION_KEY,
@@ -16,7 +17,6 @@ import {
   readGoalSnapshot,
   removeGoalValue,
   writeGoalValue,
-  type DurmemoClient,
 } from "./durmemo.ts";
 
 type Context = Parameters<Parameters<typeof Plugin.define>[0]["effect"]>[0];

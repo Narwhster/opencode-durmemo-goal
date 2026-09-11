@@ -223,8 +223,8 @@ importers:
         specifier: 4.0.0-rc.112
         version: 4.0.0-rc.112
       opencode-durmemo:
-        specifier: 0.1.0
-        version: 0.1.0
+        specifier: 0.1.2
+        version: 0.1.2
     devDependencies:
       '@types/node':
         specifier: ^26.1.1
@@ -1461,8 +1461,8 @@ packages:
     resolution: {integrity: sha512-XrsrhT5sybtKI6wakr2SPOlGZWWYbUXZ7a0jT8/QOeAPau+1X/bSegNe5YR75oJmEZQbKningirmGOEJCIk61Q==}
     engines: {node: '>=12.20.0'}
 
-  opencode-durmemo@0.1.0:
-    resolution: {integrity: sha512-gihaESYApgK9T91xah8m5NUYxSTkuBPYF4sqZDJp/gb9yVqSHl6eSNP27x90XieszkKllvKHd1yymWMBD85HPg==}
+  opencode-durmemo@0.1.2:
+    resolution: {integrity: sha512-K5+GPSl3aRSG97quCz16VeZ/Po6Pwx/v55zfyj2ron9cGMkjiqsRtwiCptJP15ZfHQtHEvY3O0AQbAXGkNo48g==}
 
   oxfmt@0.62.0:
     resolution: {integrity: sha512-vxgGHTmnDU9j4CX7dDBLzxgmHxfda/yPcgJkGCMUSCwRmz+euo/V08xXLNgXTeqAB9Fhf3Pe2nO1RNKLCVgphQ==}
@@ -2639,7 +2639,7 @@ snapshots:
 
   obug@2.2.1: {}
 
-  opencode-durmemo@0.1.0:
+  opencode-durmemo@0.1.2:
     dependencies:
       '@opencode-ai/plugin': 0.0.0-beta-18743
       effect: 4.0.0-rc.112

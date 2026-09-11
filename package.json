@@ -1,5 +1,5 @@
 {
-  "name": "opencode-goal",
+  "name": "opencode-durmemo-goal",
   "version": "0.1.0",
   "description": "Session goals for OpenCode",
   "license": "MIT",
@@ -26,7 +26,7 @@
   "dependencies": {
     "@opencode-ai/plugin": "0.0.0-beta-18743",
     "effect": "4.0.0-rc.112",
-    "opencode-durmemo": "0.1.0"
+    "opencode-durmemo": "0.1.2"
   },
   "devDependencies": {
     "@types/node": "^26.1.1",

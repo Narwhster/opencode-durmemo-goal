@@ -1,6 +1,6 @@
 import { Data, type Schema } from "effect";
 
-export const GOAL_PLUGIN_ID = "opencode-goal";
+export const GOAL_PLUGIN_ID = "opencode-durmemo-goal";
 export const GOAL_TOPIC = "goal";
 export const GOAL_DESCRIPTION_KEY = "description";
 export const GOAL_STATUS_KEY = "status";

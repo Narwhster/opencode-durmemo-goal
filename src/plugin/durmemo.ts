@@ -1,6 +1,6 @@
 import type { Plugin } from "@opencode-ai/plugin/effect";
 import { Effect, type Schema } from "effect";
-import { DurmemoRpc } from "opencode-durmemo/rpc";
+import { DurmemoRpc, type DurmemoClient } from "opencode-durmemo/rpc";
 import {
   describeInput,
   DurmemoUnavailable,
@@ -16,9 +16,7 @@ import {
 
 type Context = Parameters<Parameters<typeof Plugin.define>[0]["effect"]>[0];
 
-export const durmemoClient = (ctx: Context) => ctx.rpc(DurmemoRpc);
-
-export type DurmemoClient = ReturnType<typeof durmemoClient>;
+export const durmemoClient = (ctx: Context): DurmemoClient => ctx.rpc(DurmemoRpc);
 
 const toGoalError = (error: unknown): GoalError =>
   new DurmemoUnavailable({ message: unknownMessage(error) });

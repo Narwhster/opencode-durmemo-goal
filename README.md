@@ -1,4 +1,4 @@
-# opencode-goal
+# opencode-durmemo-goal
 
 One goal per OpenCode session, kept in [durmemo](https://github.com/narwhster/durmemo). The goal is injected into the session context so the agent keeps chasing it.
 
@@ -9,7 +9,7 @@ Needs `opencode-durmemo` installed alongside it.
 ```json
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugins": ["opencode-durmemo", "opencode-goal"]
+  "plugins": ["opencode-durmemo", "opencode-durmemo-goal"]
 }
 ```
 
