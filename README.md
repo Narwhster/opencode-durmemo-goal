@@ -1,23 +1,40 @@
-# vite-plus-starter
+# opencode-goal
 
-A starter for creating a Vite Plus project.
+One goal per OpenCode session, kept in [durmemo](https://github.com/narwhster/durmemo). The goal is injected into the session context so the agent keeps chasing it.
 
-## Development
+Needs `opencode-durmemo` installed alongside it.
 
-- Install dependencies:
+## Install
 
-```bash
-vp install
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugins": ["opencode-durmemo", "opencode-goal"]
+}
 ```
 
-- Run the unit tests:
+Order matters. List durmemo first.
 
-```bash
-vp test
+## Use as a human
+
+Set the goal from the prompt with a tag:
+
+```
+#goal[Ship the login page]
 ```
 
-- Build the library:
+You can also pass a status: `#goal[Ship the login page, paused]`.
 
-```bash
-vp pack
-```
+Or tell the agent to use the tools below.
+
+## Use as an agent
+
+Five tools under the `goal` namespace:
+
+- `goal_set_goal` sets the description. Marks it ongoing.
+- `goal_get_goal` reads the description and status.
+- `goal_pause_goal` pauses it. The context line tells you not to chase it until resumed.
+- `goal_resume_goal` marks it ongoing again.
+- `goal_stop_goal` clears it.
+
+The goal is stored per session under the `goal` topic, so normal durmemo tagging rules apply. `goal_set_goal` tags the topic for you.
