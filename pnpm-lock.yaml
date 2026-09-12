@@ -223,8 +223,8 @@ importers:
         specifier: 4.0.0-rc.112
         version: 4.0.0-rc.112
       opencode-durmemo:
-        specifier: 0.1.7
-        version: 0.1.7(@opentui/core@0.5.11(typescript@7.0.2)(web-tree-sitter@0.25.10))(@opentui/solid@0.5.11(solid-js@1.9.15)(typescript@7.0.2)(web-tree-sitter@0.25.10))(solid-js@1.9.15)
+        specifier: 0.1.8
+        version: 0.1.8(@opentui/core@0.5.11(typescript@7.0.2)(web-tree-sitter@0.25.10))(@opentui/solid@0.5.11(solid-js@1.9.15)(typescript@7.0.2)(web-tree-sitter@0.25.10))(solid-js@1.9.15)
     devDependencies:
       '@types/node':
         specifier: ^26.1.1
@@ -1788,8 +1788,8 @@ packages:
     resolution: {integrity: sha512-XrsrhT5sybtKI6wakr2SPOlGZWWYbUXZ7a0jT8/QOeAPau+1X/bSegNe5YR75oJmEZQbKningirmGOEJCIk61Q==}
     engines: {node: '>=12.20.0'}
 
-  opencode-durmemo@0.1.7:
-    resolution: {integrity: sha512-HKvScXacdCvnIcpxBJQxsI0uQC4Tj1Yza7IgwRo+6WSc2wtlEFxx2QkjUw9trYSbOX1rvy06KRk62QSkgPvFmA==}
+  opencode-durmemo@0.1.8:
+    resolution: {integrity: sha512-0DfpVwLO1793TnUpAiQDIyZ8/z1ETrCdLgmGdtkh0HUjzGs+xHHzLTFjQAgsBPK3AAx7d7nm4ZMhSFnG3jCPNQ==}
     peerDependencies:
       '@opentui/core': '>=0.5.8'
       '@opentui/solid': '>=0.5.8'
@@ -3428,7 +3428,7 @@ snapshots:
 
   obug@2.2.1: {}
 
-  opencode-durmemo@0.1.7(@opentui/core@0.5.11(typescript@7.0.2)(web-tree-sitter@0.25.10))(@opentui/solid@0.5.11(solid-js@1.9.15)(typescript@7.0.2)(web-tree-sitter@0.25.10))(solid-js@1.9.15):
+  opencode-durmemo@0.1.8(@opentui/core@0.5.11(typescript@7.0.2)(web-tree-sitter@0.25.10))(@opentui/solid@0.5.11(solid-js@1.9.15)(typescript@7.0.2)(web-tree-sitter@0.25.10))(solid-js@1.9.15):
     dependencies:
       '@opencode-ai/plugin': 0.0.0-beta-18743(@opentui/core@0.5.11(typescript@7.0.2)(web-tree-sitter@0.25.10))(@opentui/solid@0.5.11(solid-js@1.9.15)(typescript@7.0.2)(web-tree-sitter@0.25.10))(solid-js@1.9.15)
       '@opentui/core': 0.5.11(typescript@7.0.2)(web-tree-sitter@0.25.10)
